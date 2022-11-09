@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Sarala',sans-serif;
+}
+
+body {
+    font-size: 100%;
+    background-image: linear-gradient(to right bottom, #000000, #372c37, #555a79, #5393bb, #40d2e7);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.cabecalho-logo {
+    height: 110px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho-menu-item {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cabecalho-menu-item:hover {
+    color: #e4d0d0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.botoes-acesso {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.botao-entrar {
+    margin: 5px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background-color: #303330;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.botao-entrar:hover {
+    margin: 5px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background-color: #1b1d1b;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.botao-cadastro {
+    margin: 5px;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    background-color: #1acabc;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.botao-cadastro:hover {
+    margin: 5px;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    background-color: #0e746b;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #000000;
+}
+
+.formulario-painel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label-texto {
+    font-weight: bolder;
+}
+
+.botao-adicionar {
+
+}
+
+.botao-adicionar:hover {
+
+}
+
+.botao-alterar {
+
+}
+
+.botao-alterar:hover {
+
+}
+
+.botao-listar {
+
+}
+
+.botao-listar:hover {
+
+}
+
+.botao-excluir {
+
+}
+
+.botao-excluir:hover {
+
+}
+
+
+
+
+.rodape {
+    border-top: 0.4px solid #000000;
+    align-items: center;
+    text-align: center;
+}

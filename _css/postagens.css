@@ -1,0 +1,59 @@
+.conteudo-ti {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.conteudo-ti-cartao {
+    background-color: #1d191d;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+
+.conteudo-vulnerabilidade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.conteudo-vulnerabilidade-cartao {
+    background-color: #1d191d;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+
+.conteudo-tutorial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.conteudo-tutorial-cartao {
+    background-color: #1d191d;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+
+
+.link-postagem {
+    color: #25c6db;
+}
+
+.link-postagem:hover {
+    color: #2a656d;
+}
