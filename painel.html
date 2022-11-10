@@ -27,59 +27,66 @@
             <div class="container-painel">
                 <div class="container-painel-itens">
                     <form class="formulario-painel">
-                        <input type="text" name="nome" placeholder="Digite o nome" class="formulario-painel-item">
-                        <input type="email" name="email" placeholder="Digite o email" class="formulario-painel-item">
-                        <input type="password" name="senha" placeholder="Digite a senha" class="formulario-painel-item">
-                        <label class="label-texto">Área de atuação:</label>
-                        <select class="formulario-painel-item">
-                            <option value="0">-</option>
-                            <option value="1">Mobile</option>
-                            <option value="2">Web</option>
-                            <option value="3">Desktop</option>
-                            <option value="4">Dispositivos IOT</option>
-                        </select>
-                        <label class="label-texto">Quais assuntos o interessa?</label>
-                        <label>
-                            <input type="checkbox" value="c0" name="check0" class="formulario-painel-item">Redes
-                            <input type="checkbox" value="c1" name="check1" class="formulario-painel-item">Linux
-                            <input type="checkbox" value="c2" name="check2" class="formulario-painel-item">Bug-Bounty
-                            <input type="checkbox" value="c3" name="check3" class="formulario-painel-item">Ataques
-                            <input type="checkbox" value="c4" name="check4" class="formulario-painel-item">Segurança da Informação
-                            <input type="checkbox" value="c5" name="check5" class="formulario-painel-item">Windows
-                            <input type="checkbox" value="c6" name="check6" class="formulario-painel-item">Programação
-                            <input type="checkbox" value="c7" name="check7" class="formulario-painel-item">IA
-                            <input type="checkbox" value="c8" name="check8" class="formulario-painel-item">Machine learning
-                        </label>
-                        <label class="label-texto">É programador?</label>
-                        <label>
-                            <input type="radio" value="r0" class="formulario-painel-item">Sim
-                            <input type="radio" value="r1" class="formulario-painel-item">Não
-                        </label>
-                        <label class="label-texto">Linguagens que sabe programar:</label>
-                        <label>
-                            <input type="checkbox" value="c00" name="check0" class="formulario-painel-item">Python
-                            <input type="checkbox" value="c01" name="check01" class="formulario-painel-item">Ruby
-                            <input type="checkbox" value="c02" name="check02" class="formulario-painel-item">Java
-                            <input type="checkbox" value="c03" name="check03" class="formulario-painel-item">Javascript
-                            <input type="checkbox" value="c04" name="check04" class="formulario-painel-item">PHP
-                            <input type="checkbox" value="c05" name="check05" class="formulario-painel-item">C++
-                            <input type="checkbox" value="c06" name="check06" class="formulario-painel-item">C#
-                            <input type="checkbox" value="c07" name="check07" class="formulario-painel-item">Pearl
-                        </label>
-                        <label class="label-texto">Quais certificações listadas possui?</label>
-                        <label>
-                            <input type="checkbox" value="c000" name="check000" class="formulario-painel-item">CSCU
-                            <input type="checkbox" value="c001" name="check001" class="formulario-painel-item">CompTIA Security+
-                            <input type="checkbox" value="c002" name="check002" class="formulario-painel-item">NSF
-                            <input type="checkbox" value="c003" name="check003" class="formulario-painel-item">MTA
-                            <input type="checkbox" value="c004" name="check004" class="formulario-painel-item">SSCP
-                            <input type="checkbox" value="c005" name="check005" class="formulario-painel-item">OSCP
-                            <input type="checkbox" value="c006" name="check006" class="formulario-painel-item">CCSP
-                        </label>
-                        <label class="label-texto">Arquivo de foto:</label>
-                        <input type="file" name="arquivo" class="formulario-painel-item">
-                        <label class="label-texto">Descrição do usuário:</label>
-                        <textarea rows="10" cols="50" class="formulario-painel-item"></textarea>
+                        <fieldset class="divisao-dados">
+                            <legend>Dados pessoais</legend>
+                            <label class="dados-label">Nome: <input type="text" name="nome" placeholder="Digite o nome" class="formulario-painel-nome" required></label>
+                            <label class="dados-label">Email: <input type="email" name="email" placeholder="Digite o email" class="formulario-painel-email" required></label>
+                            <label class="dados-label">Senha: <input type="password" name="senha" placeholder="Digite a senha" class="formulario-painel-senha" required></label>
+                        </fieldset>
+                        <fieldset class="divisao-perfil">
+                            <legend>Perfil do usuário</legend>
+                            <label class="label-texto">Área de atuação:</label>
+                            <select class="formulario-painel-item-selec">
+                                <option value="0">-</option>
+                                <option value="1">Mobile</option>
+                                <option value="2">Web</option>
+                                <option value="3">Desktop</option>
+                                <option value="4">Dispositivos IOT</option>
+                            </select>
+                            <label class="label-texto">Quais assuntos o interessa?</label>
+                            <label>
+                                <input type="checkbox" value="c0" name="check0" class="formulario-painel-item-check">Redes
+                                <input type="checkbox" value="c1" name="check1" class="formulario-painel-item-check">Linux
+                                <input type="checkbox" value="c2" name="check2" class="formulario-painel-item-check">Bug-Bounty
+                                <input type="checkbox" value="c3" name="check3" class="formulario-painel-item-check">Ataques
+                                <input type="checkbox" value="c4" name="check4" class="formulario-painel-item-check">Segurança da Informação
+                                <input type="checkbox" value="c5" name="check5" class="formulario-painel-item-check">Windows
+                                <input type="checkbox" value="c6" name="check6" class="formulario-painel-item-check">Programação
+                                <input type="checkbox" value="c7" name="check7" class="formulario-painel-item-check">IA
+                                <input type="checkbox" value="c8" name="check8" class="formulario-painel-item-check">Machine learning
+                            </label>
+                            <label class="label-texto">É programador?</label>
+                            <label>
+                                <input type="radio" value="r0" class="formulario-painel-item">Sim
+                                <input type="radio" value="r1" class="formulario-painel-item">Não
+                            </label>
+                            <label class="label-texto">Linguagens que sabe programar:</label>
+                            <label>
+                                <input type="checkbox" value="c00" name="check0" class="formulario-painel-item-check">Python
+                                <input type="checkbox" value="c01" name="check01" class="formulario-painel-item-check">Ruby
+                                <input type="checkbox" value="c02" name="check02" class="formulario-painel-item-check">Java
+                                <input type="checkbox" value="c03" name="check03" class="formulario-painel-item-check">Javascript
+                                <input type="checkbox" value="c04" name="check04" class="formulario-painel-item-check">PHP
+                                <input type="checkbox" value="c05" name="check05" class="formulario-painel-item-check">C++
+                                <input type="checkbox" value="c06" name="check06" class="formulario-painel-item-check">C#
+                                <input type="checkbox" value="c07" name="check07" class="formulario-painel-item-check">Pearl
+                            </label>
+                            <label class="label-texto">Quais certificações listadas possui?</label>
+                            <label>
+                                <input type="checkbox" value="c000" name="check000" class="formulario-painel-item-check">CSCU
+                                <input type="checkbox" value="c001" name="check001" class="formulario-painel-item-check">CompTIA Security+
+                                <input type="checkbox" value="c002" name="check002" class="formulario-painel-item-check">NSF
+                                <input type="checkbox" value="c003" name="check003" class="formulario-painel-item-check">MTA
+                                <input type="checkbox" value="c004" name="check004" class="formulario-painel-item-check">SSCP
+                                <input type="checkbox" value="c005" name="check005" class="formulario-painel-item-check">OSCP
+                                <input type="checkbox" value="c006" name="check006" class="formulario-painel-item-check">CCSP
+                            </label>
+                            <label class="label-texto">Arquivo de foto:</label>
+                            <input type="file" name="arquivo" class="formulario-painel-item">
+                            <label class="label-texto">Descrição do usuário:</label>
+                            <textarea rows="10" cols="50" class="formulario-painel-item-text"></textarea>
+                            <input type="submit" name="botao" value="Cadastrar" class="formulario-painel-botao">
+                        </fieldset>
                     </form>
                 </div>
             </div>

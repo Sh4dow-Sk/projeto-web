@@ -7,6 +7,7 @@
     text-decoration: none;
     color: #000000;
     font-family: 'Sarala',sans-serif;
+    font-size: 16px;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 10px;
+    color: #ffffff;
 }
 
 .cabecalho-logo {
@@ -29,11 +31,13 @@ body {
 .cabecalho-menu {
     display: flex;
     gap: 30px;
+    color: #ffffff;
 }
 
 .cabecalho-menu-item {
     font-weight: 400;
     font-size: 18px;
+    color: #ffffff;
 }
 
 .cabecalho-menu-item:hover {
@@ -47,6 +51,7 @@ body {
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    color: #ffffff;
 }
 
 .botao-entrar {
@@ -58,6 +63,7 @@ body {
     border-radius: 10px;
     border: none;
     font-size: 14px;
+    color: #ffffff;
 }
 
 .botao-entrar:hover {
@@ -69,6 +75,7 @@ body {
     border-radius: 10px;
     border: none;
     font-size: 14px;
+    color: #ffffff;
 }
 
 .botao-cadastro {
@@ -80,6 +87,7 @@ body {
     border-radius: 10px;
     border: none;
     font-size: 14px;
+    color: #ffffff;
 }
 
 .botao-cadastro:hover {
@@ -91,6 +99,7 @@ body {
     border-radius: 10px;
     border: none;
     font-size: 14px;
+    color: #ffffff;
 }
 
 .conteudo {
@@ -104,44 +113,203 @@ body {
     align-items: center;
 }
 
+.formulario-painel-botao {
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #16c2b3;
+    color: #ffffff;
+    font-weight: bolder;
+    margin: 10px;   
+}
+
+.formulario-painel-botao:hover {
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #1a8a80;
+    color: #ffffff;
+    font-weight: bolder;
+    margin: 10px;   
+}
+
 .label-texto {
     font-weight: bolder;
 }
 
-.botao-adicionar {
+.painel-admin {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
 
+.divisao-dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.dados-label {
+    font-weight: bolder;
+    margin-right: 6px;
+}
+
+legend {
+    font-family: "Righteous",cursive;
+}
+
+.divisao-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    padding: 10px 40px 40px 40px;
+    border-radius: 10px;
+}
+
+.formulario-painel-item {
+    gap: 10px;
+}
+
+.formulario-painel-nome {
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario-painel-nome::placeholder {
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.formulario-painel-email {
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario-painel-email::placeholder {
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.formulario-painel-senha {
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario-painel-senha::placeholder {
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.formulario-painel-item-selec {
+    border-radius: 6px;
+    text-align: center;
+}
+
+
+.formulario-painel-item-text {
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 2px #000000;
+    padding: 5px;
+}
+
+.botao-adicionar {
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #20bb1b;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 80px;
 }
 
 .botao-adicionar:hover {
-
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #23851f;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 80px;
 }
 
 .botao-alterar {
-
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #d6b316;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 80px;
 }
 
 .botao-alterar:hover {
-
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #b89a15;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 80px;
 }
 
 .botao-listar {
-
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #0e2cb4;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 80px;
 }
 
 .botao-listar:hover {
-
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #0e2488;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 80px;
 }
 
 .botao-excluir {
-
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #e71515;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 80px;
 }
 
 .botao-excluir:hover {
-
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: #8d1616;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 80px;
 }
-
-
-
 
 .rodape {
     border-top: 0.4px solid #000000;
